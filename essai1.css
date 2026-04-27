@@ -1,0 +1,131 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  background: #f4f5f7;
+  color: #111;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.75rem;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  background: #185FA5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Titres */
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Champs */
+.field {
+  margin-bottom: 12px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.field input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input:focus {
+  border-color: #185FA5;
+}
+
+/* Lien mot de passe oublié */
+.forgot {
+  text-align: right;
+  margin-bottom: 1.25rem;
+}
+
+.forgot a, .signup a {
+  font-size: 12px;
+  color: #185FA5;
+  text-decoration: none;
+}
+
+.forgot a:hover, .signup a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton */
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background: #185FA5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button[type="submit"]:hover {
+  background: #0C447C;
+}
+
+/* Inscription */
+.signup {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 1.25rem;
+}
