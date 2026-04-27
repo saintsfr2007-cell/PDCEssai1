@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScanMe — Connexion</title>
+  <link rel="stylesheet" href="essai1.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+
+      <div class="logo">
+        <div class="logo-icon">
+          <!-- icône QR simplifié -->
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <rect x="1" y="1" width="5" height="5" rx="1" fill="white"/>
+            <rect x="10" y="1" width="5" height="5" rx="1" fill="white"/>
+            <rect x="1" y="10" width="5" height="5" rx="1" fill="white"/>
+            <rect x="10" y="10" width="2" height="2" rx=".5" fill="white"/>
+            <rect x="13" y="10" width="2" height="2" rx=".5" fill="white"/>
+            <rect x="10" y="13" width="2" height="2" rx=".5" fill="white"/>
+            <rect x="13" y="13" width="2" height="2" rx=".5" fill="white"/>
+          </svg>
+        </div>
+        <span>ScanMe</span>
+      </div>
+
+      <h1>Connexion</h1>
+      <p class="subtitle">Accédez à votre espace de suivi des présences</p>
+
+      <form action="/login" method="POST">
+        <div class="field">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" placeholder="etudiant@universite.bj" required />
+        </div>
+
+        <div class="field">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required />
+        </div>
+
+        <div class="forgot">
+          <a href="/forgot-password">Mot de passe oublié ?</a>
+        </div>
+
+        <button type="submit">Se connecter</button>
+      </form>
+
+      <p class="signup">
+        Pas encore de compte ? <a href="/register">S'inscrire</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
